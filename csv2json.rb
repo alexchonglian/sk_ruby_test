@@ -13,12 +13,10 @@ end
 lines = CSV.open(ARGV[0]).readlines
 keys = lines.delete(lines.first)
 
-
 #abstract the modifier logic out to this method
 def generate_modifer (flat_modifiers)
   #programming defensively
-  return nil unless flat_modifiers
-
+  return [] unless flat_modifiers
   #flat = [name1, price1, name2, price2, name3, price3]
   #grouped = [[name1, price1], [name2, price2], [name3, price3]]
   grouped_modifiers = flat_modifiers.each_slice(2).to_a
@@ -26,9 +24,16 @@ def generate_modifer (flat_modifiers)
     #pair = [name, price]
     name = pair[0]
     price = pair[1]
-    {:name => name, :price => price} if name && price
+    {:name => name, :price => generate_price(price)} if name && price
   end
 end
+
+# "-$125.0" => -125.0
+def generate_price(price_str)
+  return nil unless price_str
+  return price_str.tr('$','').to_f
+end
+
 
 
 File.open(ARGV[1], 'w') do |f|
@@ -36,11 +41,11 @@ File.open(ARGV[1], 'w') do |f|
     {
     :id => values[0],
     :description => values[1],
-    :price => values[2],
-    :cost => values[3],
+    :price => generate_price(values[2]),
+    :cost => generate_price(values[3]),
     :price_type => values[4],
     :quantity_on_hand => values[5],
-    :modifier => generate_modifer(values[6, values.size-1]) || []
+    :modifier => generate_modifer(values[6, values.size-1])
     }
   end
   f.puts JSON.pretty_generate(data)

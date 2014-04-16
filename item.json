@@ -2,22 +2,22 @@
   {
     "id": "111010",
     "description": "Coffee",
-    "price": "$1.25",
-    "cost": "$0.80",
+    "price": 1.25,
+    "cost": 0.8,
     "price_type": "system",
     "quantity_on_hand": "100000",
     "modifier": [
       {
         "name": "Small",
-        "price": "-$0.25"
+        "price": -0.25
       },
       {
         "name": "Medium",
-        "price": "$0.00"
+        "price": 0.0
       },
       {
         "name": "Large",
-        "price": "$0.30"
+        "price": 0.3
       }
     ]
   },
@@ -35,44 +35,44 @@
   {
     "id": "111022",
     "description": "Bagel",
-    "price": "$3.45",
-    "cost": "$2.00",
+    "price": 3.45,
+    "cost": 2.0,
     "price_type": "system",
     "quantity_on_hand": "9855",
     "modifier": [
       {
         "name": "Cream Cheese",
-        "price": "$1.00"
+        "price": 1.0
       }
     ]
   },
   {
     "id": "2847224",
     "description": "Orange Juice 48",
-    "price": "$68.57",
+    "price": 68.57,
     "cost": null,
     "price_type": "system",
     "quantity_on_hand": "0",
     "modifier": [
       {
         "name": "Small",
-        "price": "$0.00"
+        "price": 0.0
       },
       {
         "name": "Medium",
-        "price": "$1.00"
+        "price": 1.0
       },
       {
         "name": "Large",
-        "price": "$2.50"
+        "price": 2.5
       }
     ]
   },
   {
     "id": "2847225",
     "description": "Milk 49",
-    "price": "$70.00",
-    "cost": "49",
+    "price": 70.0,
+    "cost": 49.0,
     "price_type": "system",
     "quantity_on_hand": "510",
     "modifier": [
@@ -82,7 +82,7 @@
   {
     "id": "2847226",
     "description": "Ciabatta 50",
-    "price": "$71.43",
+    "price": 71.43,
     "cost": null,
     "price_type": "system",
     "quantity_on_hand": "0",
@@ -93,7 +93,7 @@
   {
     "id": "2847227",
     "description": "baguette 51",
-    "price": "$0.00",
+    "price": 0.0,
     "cost": null,
     "price_type": "open",
     "quantity_on_hand": "0",
@@ -104,7 +104,7 @@
   {
     "id": "2847228",
     "description": "Sour Dough Boule 52",
-    "price": "$74.29",
+    "price": 74.29,
     "cost": null,
     "price_type": "system",
     "quantity_on_hand": "0",
@@ -115,7 +115,7 @@
   {
     "id": "2847244",
     "description": "Whole Coffee Cake 68",
-    "price": "$0.00",
+    "price": 0.0,
     "cost": null,
     "price_type": "open",
     "quantity_on_hand": "0",
@@ -126,7 +126,7 @@
   {
     "id": "2847229",
     "description": "Country Wht Boule 53",
-    "price": "$75.71",
+    "price": 75.71,
     "cost": null,
     "price_type": "system",
     "quantity_on_hand": "0",
@@ -137,7 +137,7 @@
   {
     "id": "2847230",
     "description": "Semolina Batard 54",
-    "price": "$77.14",
+    "price": 77.14,
     "cost": null,
     "price_type": "system",
     "quantity_on_hand": "0",
@@ -148,7 +148,7 @@
   {
     "id": "2847231",
     "description": "Multigrain Batard 55",
-    "price": "$78.57",
+    "price": 78.57,
     "cost": null,
     "price_type": "system",
     "quantity_on_hand": "0",
@@ -159,8 +159,8 @@
   {
     "id": "2847232",
     "description": "Focaccia 56",
-    "price": "$80.00",
-    "cost": "56",
+    "price": 80.0,
+    "cost": 56.0,
     "price_type": "system",
     "quantity_on_hand": "440",
     "modifier": [
@@ -170,18 +170,18 @@
   {
     "id": "2847233",
     "description": "Rolls 57",
-    "price": "$81.43",
+    "price": 81.43,
     "cost": null,
     "price_type": "system",
     "quantity_on_hand": "0",
     "modifier": [
       {
         "name": "Jelly",
-        "price": "$.75"
+        "price": 0.75
       },
       {
         "name": "Peanut Butter",
-        "price": "$1.12"
+        "price": 1.12
       }
     ]
   }
